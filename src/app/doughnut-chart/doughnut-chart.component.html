@@ -1,0 +1,23 @@
+<div style="background-color: white;" >
+<div style="display: flex;" >
+    <b>your sales</b>
+    <div class="input-group mb-3">
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected><span style="color :lightgray" >Product:</span> last year</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+</div>
+
+  <div class="doughnut-wrapper" >
+    <canvas style="width: 100%;height: 100%;" baseChart
+    [data]="doughnutChartData"
+    [chartType]="doughnutChartType"
+  ></canvas>
+
+  </div>
+
+
+</div>

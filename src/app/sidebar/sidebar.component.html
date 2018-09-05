@@ -1,0 +1,28 @@
+<div class="side-bar-wrapper">
+  <div class="side-bar-container">
+    <div class="side-bar-headline">
+
+      <b>Merkury</b>
+    </div>
+
+
+
+
+    <div class="side-bar-body">
+
+      <div class="side-bar-item" *ngFor="let link of links">
+       <div class="item-box">
+        <div class="item-img">
+          <i [class]="link.icon" ></i>
+        </div>
+        <div class="item-text">
+          <p>{{link.name}}
+          </p>
+        </div>
+       </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

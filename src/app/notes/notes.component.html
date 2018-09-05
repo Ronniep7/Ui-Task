@@ -1,0 +1,54 @@
+<div class="note">
+  <div class="note-header">
+    <div class="note-header-container">
+      <div class="note-head">
+        <b>{{tasks.head}}</b>
+
+      </div>
+      <div class="note-alerts">
+        <div *ngFor="let alert of tasks.alert;let i = index" class="note-circule" [style.background-color]="i > 0?'#f83c7b':'cornflowerblue'" >
+          <p>{{alert}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="note-body">
+<ng-container  *ngFor="let message of tasks.messages;let i = index"  >
+    <div class="message-wrapper" [style.background-color]="i<2 && tasks.head=='Messages' ? 'whitesmoke':'white'" >
+  <div class="message-container" [style.margin-top.px]=" tasks.head != 'Tasks' ?'2':'9'" >
+    <div *ngIf="tasks.head == 'Tasks' "  class="message-circule">
+      <div   class="note-circule" >
+          {{starter(message.title)}}
+      </div>
+    </div>
+    <div *ngIf="tasks.head != 'Tasks'" class="messageProfilePicture"  >
+        <img src="../../assets/portrait-597173_640.jpg" >
+    </div>
+    <div *ngIf="tasks.head == 'Tasks'" class="message-details">
+      <b>{{message.title}}</b>
+       <p [style.color]=" i<2 ? 'red':black ">
+          <i class="far fa-clock"></i>
+        {{message.timePassed}} days left </p>
+    </div>
+    <div *ngIf="tasks.head == 'Messages'" class="message-details" >
+      <div  class="messagesHeadlines" ><b>{{message.name}}</b><span>{{message.timePassed}} ago</span></div>
+      <div class="messagesTitle">{{message.title}}</div>
+      <div class="messagesIcons">
+          <i class="fas fa-reply"></i>
+          <i class="fas fa-cog"></i>
+      </div>
+    </div>
+      <div *ngIf="tasks.head == 'Activity'" class="message-details">
+          <div  class="messagesHeadlines" ><b>{{message.name}}</b><span>{{message.action}}</span><b>{{message.actionName}}</b></div>
+          <span id="timeSpan" >
+              <i class="far fa-clock"></i>
+            {{message.timePassed}} ago</span>
+        </div>
+    <div *ngIf="tasks.head == 'Tasks'" class="message-icon" >
+        <i class="fas fa-ellipsis-v"></i>
+    </div>
+  </div>
+</div>
+</ng-container>
+  </div>
+</div>

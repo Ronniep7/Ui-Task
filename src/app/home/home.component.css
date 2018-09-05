@@ -1,0 +1,37 @@
+.home-wrapper{
+    display: flex;
+    background-color: whitesmoke;
+}
+.home-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.home-info{
+    width: 95%;
+    margin: 0px auto;
+}
+.headline{
+    height: 80px;
+    margin: 20px 0px;
+}
+.status{
+    border: 1px solid red;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.notes{
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px)  {
+    .notes{
+        flex-direction: column;
+    }
+
+}

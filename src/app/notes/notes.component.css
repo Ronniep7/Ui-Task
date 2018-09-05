@@ -1,0 +1,87 @@
+.note{
+    width: 100%;
+    background-color: white;
+    border: 1px solid lightgrey;
+    min-height: 300px;
+
+}
+/* tasks box styles */
+.note-circule{
+    background-color: cornflowerblue;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 29px;
+    color: white;
+    font-size: 15px;
+}
+.note-header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 27px;   
+}
+.note-alerts{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+.message-wrapper{
+    width: 100%;
+    border-top: 1px solid lightgrey;
+}
+.message-container{
+    width: 80%;
+    margin: 9px 27px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.message-details p{
+    font-size: 10px;
+}
+.message-details b{
+    font-size: 12px;
+}
+.message-circule,.message-icon{
+    margin-top: 5px;
+}
+.message-details{
+    width: 80%;
+}
+
+/* messages box style */
+
+.messageProfilePicture img{
+width: 30px;
+border-radius: 50px;
+height: 30px;
+margin-top: 8px;
+
+
+}
+.messagesIcons{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    font-size: 12px;
+}
+.messagesHeadlines b,.messagesHeadlines span{
+    font-size: 9px;
+    margin-right: 6px;
+}
+.messagesHeadlines span{
+    color: lightgrey;
+}
+.messagesTitle{
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+/* activity styles */
+
+#timeSpan{
+    color: lightgray;
+    font-size: 12px;
+}
